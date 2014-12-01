@@ -1,0 +1,21 @@
+<h1 id="page-title"><%= title %></h1>
+
+<div id="list">
+  <form action="/create" method="post" accept-charset="utf-8">
+    <div class="item-new">
+      content : <input class="input" type="text" name="content" />  <font color="red"> * please enter for submit. </font>
+    </div>
+  </form>
+
+<% todos.forEach( function ( todo ){ %>
+  <div class="item">
+  	<table>
+  		<tr>
+			<td width="300"><%= todo.updated_at %></td>				
+  			<td width="200"><a class="update-link" href="/edit/<%= todo._id %>" title="Update this todo item"><%= todo.content %></a></td>
+  			<td width="100"><a class="del-btn" href="/destroy/<%= todo._id %>" title="Delete this todo item">Delete</a></td>
+    	</tr>
+    </table>
+  </div>
+<% }); %>
+</div>
