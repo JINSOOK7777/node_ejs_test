@@ -5,4 +5,5 @@
 	<buildpathentry kind="con" path="org.eclipse.vjet.eclipse.core.JSNATIVE_CONTAINER/JS Native Types"/>
 	<buildpathentry kind="con" path="org.eclipse.vjet.eclipse.core.BROWSER_CONTAINER/Browser SDK"/>
 	<buildpathentry kind="con" path="org.eclipse.vjet.eclipse.core.VJO_CONTAINER/VJO LIB"/>
+	<buildpathentry combineaccessrules="false" kind="prj" path="/NodejsTL"/>
 </buildpath>
